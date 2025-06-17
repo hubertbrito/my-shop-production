@@ -1,37 +1,15 @@
-# Logs e arquivos de depuração
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
 # Diretórios de dependências
-node_modules/ # Aplica-se a node_modules tanto em frontend/ quanto em backend/
+node_modules/
 
-# Variáveis de Ambiente (CRUCIAL! Nunca devem ir para o Git)
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-backend/.env # Exclui especificamente o .env dentro da pasta backend, caso ele estivesse em outro local além da raiz do backend
+# Variáveis de Ambiente
+.env*
+!.env.example # Se você tiver um arquivo .env.example que deve ser versionado
 
-# Saídas de Build (compilados)
-backend/dist/ # Saída de build do seu NestJS backend
-frontend/dist/ # Saída de build do seu Vite/React frontend
-frontend/dist-ssr/ # Saída de build SSR do seu Vite/React (se usado)
-frontend/build/ # Para garantir, caso o frontend mude para create-react-app
+# Saídas de Build
+dist/
+build/
 
-# Arquivos temporários e de configuração de IDEs/OS
-.vscode/ # Configurações do VS Code (opcional: se quiser compartilhar settings.json, remova esta linha e adicione apenas .vscode/* mas ignore extensions.json)
-!.vscode/extensions.json # Exceção: permite o arquivo de extensões do VSCode se a linha .vscode/ estiver acima
-.idea/ # Configurações do WebStorm/IntelliJ
-.DS_Store # Arquivos do macOS
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-*.local # Arquivos locais de configuração do Vite (que você tinha no frontend)
+# Configurações de IDEs/OS (opcional)
+.vscode/
+.DS_Store
+Thumbs.db

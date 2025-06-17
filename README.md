@@ -23,7 +23,7 @@ Projeto **Concluído** para fins de desafio técnico, com as funcionalidades ess
 ## Funcionalidades e Demonstração da Aplicação
 
 * `Listagem de Produtos`: Exibição de produtos normalizados, provenientes de duas APIs externas, com detalhes como nome, descrição, preço e categoria.
-* `Detalhes do Produto`: Visualização aprofundada de um produto específico ao clicar em seu card, mostrando todas as informações disponíveis.
+* `Detalhes do Produto`: Visualização aprofundada de um produto específico ao clicar em seu card, mostrando todas as informações disponíveis e úteis para o usuário.
 * `Carrinho de Compras`: Funcionalidade de adicionar, remover e ajustar a quantidade de produtos no carrinho, com cálculo dinâmico do total.
 * `Processo de Checkout`: Fluxo completo de finalização de compra, coletando dados básicos para simular um pedido.
 * `Painel Administrativo Básico`: Uma interface simples (com login `admin`/`admin123`) para visualizar os pedidos finalizados e persistidos no backend.
