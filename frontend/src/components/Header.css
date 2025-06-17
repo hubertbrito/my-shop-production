@@ -1,0 +1,102 @@
+.app-header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.app-header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.app-header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.app-header .nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.app-header .nav-links a:hover {
+  color: #007bff;
+}
+
+.app-header .cart-link {
+  background-color: #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.app-header .cart-link:hover {
+  background-color: #0056b3;
+}
+
+.app-header .admin-link {
+  background-color: #ffc107; /* Cor de destaque para o link Admin */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333; 
+}
+
+.app-header .admin-link:hover {
+  background-color: #e0a800;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .app-header nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 96%;
+    margin: 0 auto;
+    padding-right: 3rem;
+  }
+  .app-header .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .app-header .nav-links a {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  .app-header .nav-links a:hover {
+    margin: 0;
+    color: #007bff;
+  }
+  .app-header .cart-link {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .app-header .logo {
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+}
