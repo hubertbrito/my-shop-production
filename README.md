@@ -26,7 +26,7 @@ Projeto **Concluído** para fins de desafio técnico, com as funcionalidades ess
 * `Detalhes do Produto`: Visualização aprofundada de um produto específico ao clicar em seu card, mostrando todas as informações disponíveis e úteis para o usuário.
 * `Carrinho de Compras`: Funcionalidade de adicionar, remover e ajustar a quantidade de produtos no carrinho, com cálculo dinâmico do total.
 * `Processo de Checkout`: Fluxo completo de finalização de compra, coletando dados básicos para simular um pedido.
-* `Painel Administrativo Básico`: Uma interface simples (com login `admin`/`admin123`) para visualizar os pedidos finalizados e persistidos no backend.
+* `Painel Administrativo Básico`: Uma interface simples (com login `admin`/`admin123`) para visualizar os pedidos finalizados e persistidos no backend. O link/botão de administrador no header está visível apenas para facilitar a análise do teste e demonstrar a persistência dos dados; em um ambiente de produção, ele seria acessível apenas para usuários autorizados.
 * `Filtro por Categoria (Frontend)`: Opção de filtrar produtos por categorias através de um dropdown, adaptado à natureza dos dados externos.
 * `Normalização de Dados (Backend)`: Processo robusto no backend para unificar e padronizar dados de produtos vindos de fontes com estruturas heterogêneas.
 * `Deduplicação de Produtos (Backend)`: Lógica implementada para garantir a unicidade dos produtos persistidos, mesmo com IDs sobrepostos entre diferentes fornecedores.
