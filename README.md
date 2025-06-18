@@ -26,7 +26,7 @@ Projeto **Concluído** para fins de desafio técnico, com as funcionalidades ess
 * `Detalhes do Produto`: Visualização aprofundada de um produto específico ao clicar em seu card, mostrando todas as informações disponíveis e úteis para o usuário.
 * `Carrinho de Compras`: Funcionalidade de adicionar, remover e ajustar a quantidade de produtos no carrinho, com cálculo dinâmico do total.
 * `Processo de Checkout`: Fluxo completo de finalização de compra, coletando dados básicos para simular um pedido.
-* `Painel Administrativo Básico`: Uma interface simples (com login `admin`/`admin123`) para visualizar os pedidos finalizados e persistidos no backend.
+* `Painel Administrativo Básico`: Uma interface simples (com login `admin`/`admin123`) para visualizar os pedidos finalizados e persistidos no backend. O link/botão de administrador no header está visível apenas para facilitar a análise do teste e demonstrar a persistência dos dados; em um ambiente de produção, ele seria acessível apenas para usuários autorizados.
 * `Filtro por Categoria (Frontend)`: Opção de filtrar produtos por categorias através de um dropdown, adaptado à natureza dos dados externos.
 * `Normalização de Dados (Backend)`: Processo robusto no backend para unificar e padronizar dados de produtos vindos de fontes com estruturas heterogêneas.
 * `Deduplicação de Produtos (Backend)`: Lógica implementada para garantir a unicidade dos produtos persistidos, mesmo com IDs sobrepostos entre diferentes fornecedores.
@@ -38,8 +38,11 @@ Projeto **Concluído** para fins de desafio técnico, com as funcionalidades ess
 Para executar este projeto localmente, siga os passos abaixo:
 
 * **Pré-requisitos:** Certifique-se de ter **Node.js** e **npm** (ou Yarn) instalados em sua máquina.
-* **Clonar e Navegar:** Clone o repositório (`git clone [LINK_DO_SEU_REPOSITORIO]`) e navegue para a pasta do projeto (`cd devnology-ecommerce`, ou o nome da pasta do seu projeto).
-* **Configurar e Iniciar o Backend:** Navegue até a pasta `backend` (`cd backend`), instale as dependências (`npm install`), crie um arquivo `.env` na raiz da pasta `backend` e adicione sua string de conexão do MongoDB Atlas (`MONGODB_URI=sua_string_de_conexao_mongodb_atlas`). Em seguida, inicie o servidor de desenvolvimento com `npm run start:dev`. Ele rodará em `http://localhost:3000` e populará o banco de dados.
+* **Clonar e Navegar:** Clone o repositório (https://github.com/hubertbrito/ecommerce-devnology.git) e navegue para a pasta do projeto (`cd devnology-ecommerce`).
+* **Configurar e Iniciar o Backend:** Navegue até a pasta `backend` (`cd backend`), instale as dependências (`npm install`), crie um arquivo `.env` na raiz da pasta `backend` - Configuração do Banco de Dados
+Para a persistência de dados do backend, utilizamos o MongoDB Atlas (Free Tier).
+Você precisará criar um cluster no MongoDB Atlas. Dentro do seu banco de dados, a aplicação utiliza as coleções products (para armazenar produtos) e orders (para registrar os pedidos).
+A string de conexão do MongoDB Atlas deve ser configurada em um arquivo .env na raiz da pasta backend/ (ex: MONGODB_URI="sua_string_de_conexao").(`MONGODB_URI=sua_string_de_conexao_mongodb_atlas`). Em seguida, inicie o servidor de desenvolvimento com `npm run start:dev`. Ele rodará em `http://localhost:3000` e populará o banco de dados.
 * **Configurar e Iniciar o Frontend:** Em um novo terminal, navegue até a pasta `frontend` do projeto (`cd ../frontend`), instale as dependências (`npm install`). Por fim, inicie o aplicativo React com `npm run dev`. Ele estará disponível em `http://localhost:5173`.
 
 Após seguir esses passos, acesse `http://localhost:5173` no seu navegador. Para o painel administrativo, vá em `http://localhost:5173/admin-login` (usuário: `admin`, senha: `admin123`).
