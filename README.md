@@ -38,8 +38,11 @@ Projeto **Concluído** para fins de desafio técnico, com as funcionalidades ess
 Para executar este projeto localmente, siga os passos abaixo:
 
 * **Pré-requisitos:** Certifique-se de ter **Node.js** e **npm** (ou Yarn) instalados em sua máquina.
-* **Clonar e Navegar:** Clone o repositório (`git clone [LINK_DO_SEU_REPOSITORIO]`) e navegue para a pasta do projeto (`cd devnology-ecommerce`, ou o nome da pasta do seu projeto).
-* **Configurar e Iniciar o Backend:** Navegue até a pasta `backend` (`cd backend`), instale as dependências (`npm install`), crie um arquivo `.env` na raiz da pasta `backend` e adicione sua string de conexão do MongoDB Atlas (`MONGODB_URI=sua_string_de_conexao_mongodb_atlas`). Em seguida, inicie o servidor de desenvolvimento com `npm run start:dev`. Ele rodará em `http://localhost:3000` e populará o banco de dados.
+* **Clonar e Navegar:** Clone o repositório (https://github.com/hubertbrito/ecommerce-devnology.git) e navegue para a pasta do projeto (`cd devnology-ecommerce`).
+* **Configurar e Iniciar o Backend:** Navegue até a pasta `backend` (`cd backend`), instale as dependências (`npm install`), crie um arquivo `.env` na raiz da pasta `backend` - Configuração do Banco de Dados
+Para a persistência de dados do backend, utilizamos o MongoDB Atlas (Free Tier).
+Você precisará criar um cluster no MongoDB Atlas. Dentro do seu banco de dados, a aplicação utiliza as coleções products (para armazenar produtos) e orders (para registrar os pedidos).
+A string de conexão do MongoDB Atlas deve ser configurada em um arquivo .env na raiz da pasta backend/ (ex: MONGODB_URI="sua_string_de_conexao").(`MONGODB_URI=sua_string_de_conexao_mongodb_atlas`). Em seguida, inicie o servidor de desenvolvimento com `npm run start:dev`. Ele rodará em `http://localhost:3000` e populará o banco de dados.
 * **Configurar e Iniciar o Frontend:** Em um novo terminal, navegue até a pasta `frontend` do projeto (`cd ../frontend`), instale as dependências (`npm install`). Por fim, inicie o aplicativo React com `npm run dev`. Ele estará disponível em `http://localhost:5173`.
 
 Após seguir esses passos, acesse `http://localhost:5173` no seu navegador. Para o painel administrativo, vá em `http://localhost:5173/admin-login` (usuário: `admin`, senha: `admin123`).
