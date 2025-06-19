@@ -29,7 +29,7 @@ const AdminOrdersPage: React.FC = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get<Order[]>('http://localhost:3000/orders');
+        const response = await axios.get<Order[]>('https://ecommerce-devnology.onrender.com/orders');
         setOrders(response.data);
         setLoading(false);
       } catch (err) {

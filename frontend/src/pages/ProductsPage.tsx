@@ -13,7 +13,7 @@ const ProductsPage: React.FC = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get<Product[]>('http://localhost:3000/products');
+        const response = await axios.get<Product[]>('https://ecommerce-devnology.onrender.com/products');
         setProducts(response.data);
         console.log('Produtos carregados:', response.data);
       } catch (err) {

@@ -42,7 +42,7 @@ const CheckoutPage: React.FC = () => {
         paymentType: paymentType,
       };
 
-      await axios.post('http://localhost:3000/orders', orderData);
+      await axios.post('https://ecommerce-devnology.onrender.com/orders', orderData);
 
       alert(`Compra efetuada com sucesso via ${paymentType}! Seu pedido foi registrado em nosso banco de dados.`);
 
