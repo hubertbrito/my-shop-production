@@ -23,7 +23,7 @@ const ProductDetailsPage: React.FC = () => {
         return;
       }
       try {
-        const response = await axios.get<Product>(`https://ecommerce-devnology.onrender.com/products/${id}`);
+        const response = await axios.get<Product>(`https://my-shop-production-backend.onrender.com/products/${id}`);
         setProduct(response.data);
       } catch (err) {
         console.error('Erro ao buscar detalhes do produto:', err);
